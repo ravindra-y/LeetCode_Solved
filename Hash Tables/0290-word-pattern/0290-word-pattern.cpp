@@ -6,40 +6,27 @@ public:
         stringstream ss(s);
         string token;
 
-        while (ss >> token) {
+        int count = 0;
+        while (getline(ss, token, ' ')) {
             words.push_back(token);
+            count++;
         }
 
-        int n = pattern.length();
+        int n = pattern.size();
 
-        if (n != words.size()) {
-            return false;
-        }
+        if (count != n) return false;
 
         unordered_map<string, char> mp;
         set<char> used;
 
         for (int i = 0; i < n; i++) {
-            string word = words[i];
-            char ch = pattern[i];
-
-            if (mp.find(word) == mp.end()) {
-                // This character is already assigned to another word
-                if (used.find(ch) != used.end()) {
-                    return false;
-                }
-
-                mp[word] = ch;
-                used.insert(ch);
-            }
-            else {
-                // Existing word must map to the same character
-                if (mp[word] != ch) {
-                    return false;
-                }
+            if (mp.find(words[i]) == mp.end() && used.find(pattern[i]) == used.end()) {
+                used.insert(pattern[i]);
+                mp[words[i]] = pattern[i];
+            } else if (mp[words[i]] != pattern[i]) {
+                return false;
             }
         }
-
         return true;
     }
 };
