@@ -2,8 +2,8 @@
 
 #  LeetCode Solved Solutions
 
-[![LeetCode Profile](https://img.shields.io/badge/LeetCode-ravindra-y-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ravindra-y/)
-[![GitHub Profile](https://img.shields.io/badge/GitHub-ravindra-y-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ravindra-y)
+[![LeetCode Profile](https://img.shields.io/badge/LeetCode-ravindra--y-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/ravindra-y/)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-ravindra--y-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ravindra-y)
 [![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
 
 ---
