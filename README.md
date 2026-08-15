@@ -19,7 +19,7 @@
 
 ### ⚡ Activity & Badges
 
-[![Total Solved](https://img.shields.io/badge/Total%20Solved-196-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/ravindra-y/)
+[![Total Solved](https://img.shields.io/badge/Total%20Solved-197-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/ravindra-y/)
 [![Acceptance Rate](https://img.shields.io/badge/Acceptance-99%25-2DB55D?style=for-the-badge)](https://leetcode.com/u/ravindra-y/)
 [![Max Streak](https://img.shields.io/badge/Max%20Streak-57%20Days-FF4500?style=for-the-badge&logo=fire&logoColor=white)](https://leetcode.com/u/ravindra-y/)
 [![Current Streak](https://img.shields.io/badge/Current%20Streak-41%20Days-00D26A?style=for-the-badge&logo=fire&logoColor=white)](https://leetcode.com/u/ravindra-y/)
@@ -33,15 +33,15 @@
 | Level | Quest | Status |
 |:---:|:---|:---:|
 |  | Solve 100 problems | ✅ Unlocked |
-|  | Solve 250 problems | ⬜ In Progress (196/250) |
-|  | Solve 500 problems | ⬜ In Progress (196/500) |
+|  | Solve 250 problems | ⬜ In Progress (197/250) |
+|  | Solve 500 problems | ⬜ In Progress (197/500) |
 |  | Hit a 100-day streak | ⬜ In Progress (57/100) |
 |  | Master all patterns (DP, Graphs, Greedy, Backtracking, Trees) | ⬜ In Progress |
 |  | Reach LeetCode Knight badge |  Locked |
 
 **Progress toward next level (250 solved):**
 
-![Progress](https://progress-bar.xyz/78/?title=Level%20Up&width=400&color=FFA116)
+![Progress](https://progress-bar.xyz/79/?title=Level%20Up&width=400&color=FFA116)
 
 ---
 
