@@ -1,23 +1,24 @@
 class Solution {
 public:
     int maxArea(vector<int>& height) {
-        int i = 0, j = height.size() - 1;
-        int maxWater = 0;
+        int left = 0;
+        int right = height.size() - 1;
+        int maxArea = 0;
 
-        while (i < j) {
-            int length = min(height[i], height[j]);
-            int width = j - i;
-            int currWater = length * width;
+        while (left < right) {
+            // Area = width * height of shorter line
+            int width = right - left;
+            int h = min(height[left], height[right]);
+            maxArea = max(maxArea, width * h);
 
-            maxWater = max(maxWater, currWater);
-
-            if (height[i] > height[j]) {
-                j--;
+            // Move the pointer at the shorter line
+            if (height[left] < height[right]) {
+                left++;
             } else {
-                i++;
+                right--;
             }
         }
 
-        return maxWater;
+        return maxArea;
     }
 };
