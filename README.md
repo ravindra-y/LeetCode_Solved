@@ -22,7 +22,7 @@
 [![Total Solved](https://img.shields.io/badge/Total%20Solved-205-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/ravindra-y/)
 [![Acceptance Rate](https://img.shields.io/badge/Acceptance-99%25-2DB55D?style=for-the-badge)](https://leetcode.com/u/ravindra-y/)
 [![Max Streak](https://img.shields.io/badge/Max%20Streak-57%20Days-FF4500?style=for-the-badge&logo=fire&logoColor=white)](https://leetcode.com/u/ravindra-y/)
-[![Current Streak](https://img.shields.io/badge/Current%20Streak-11%20Days-00D26A?style=for-the-badge&logo=fire&logoColor=white)](https://leetcode.com/u/ravindra-y/)
+[![Current Streak](https://img.shields.io/badge/Current%20Streak-12%20Days-00D26A?style=for-the-badge&logo=fire&logoColor=white)](https://leetcode.com/u/ravindra-y/)
 
 ---
 
