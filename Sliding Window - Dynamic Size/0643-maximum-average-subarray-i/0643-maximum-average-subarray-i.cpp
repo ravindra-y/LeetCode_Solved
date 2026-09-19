@@ -1,30 +1,19 @@
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
-        // Get sum for starting window
-        int sum = 0;
-        for(int i = 0; i < k; i++) {
-            sum += nums[i];
+        int windowSum = 0;
+        for (int i = 0; i < k; i++) {
+            windowSum += nums[i];
         }
 
-        int maxSum = sum;
+        int maxSum = windowSum;
 
-        // Start sliding window
-        int startIndex = 0;
-        int endIndex = k;
+        for (int i = k; i < nums.size(); i++) {
+            windowSum += nums[i] - nums[i - k];
 
-        while(endIndex < nums.size()) {
-            sum -= nums[startIndex]; // Remove previous element
-            startIndex++;
-
-            sum += nums[endIndex]; // Add next element
-            endIndex++;
-
-            maxSum = max(maxSum, sum); // Update max sum
-
+            maxSum = max(maxSum, windowSum);
         }
 
-        // Return the average
-        return (double) maxSum / k;
+        return (double)maxSum / k;
     }
 };
