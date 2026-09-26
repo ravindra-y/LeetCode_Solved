@@ -1,18 +1,24 @@
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        vector<int> lastIndex(128, -1);
-        int maxLength = 0;
-        int left = 0;
+        unordered_set<char> seen;
+        int maxLen = 0;
+        int i = 0; // left pointer
 
-        for (int right = 0; right < s.length(); ++right) {
-            if (lastIndex[s[right]] >= left) {
-                left = lastIndex[s[right]] + 1;
+        for (int j = 0; j < s.length(); j++) { // right pointer
+            // Shrink window until the duplicate character s[j] is removed
+            while (seen.count(s[j])) {
+                seen.erase(s[i]);
+                i++;
             }
-            lastIndex[s[right]] = right;
-            maxLength = max(maxLength, right - left + 1);
+            
+            // Add current character to set
+            seen.insert(s[j]);
+            
+            // Update max length with the current window size
+            maxLen = max(maxLen, j - i + 1);
         }
 
-        return maxLength;
+        return maxLen;
     }
 };
