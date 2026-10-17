@@ -4,25 +4,15 @@ public:
         int n = cardPoints.size();
         int windowSize = n - k;
 
-        // Compute total sum of all cards
         int totalSum = 0;
-        for (int point : cardPoints) {
-            totalSum += point;
-        }
+        for (int x : cardPoints) totalSum += x;
 
-        // Edge case: take all cards
-        if (windowSize == 0)
-            return totalSum;
-
-        // Compute sum of the first window
+        // Find minimum sum of a contiguous window of size (n - k)
         int windowSum = 0;
-        for (int i = 0; i < windowSize; i++) {
+        for (int i = 0; i < windowSize; i++)
             windowSum += cardPoints[i];
-        }
 
         int minWindowSum = windowSum;
-
-        // Slide the window across the array
         for (int i = windowSize; i < n; i++) {
             windowSum += cardPoints[i] - cardPoints[i - windowSize];
             minWindowSum = min(minWindowSum, windowSum);
