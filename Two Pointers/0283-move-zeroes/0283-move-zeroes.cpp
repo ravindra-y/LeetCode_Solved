@@ -5,7 +5,7 @@ public:
 
         for(int i = 0; i < nums.size(); i++) {
             if(nums[i] != 0) {
-                swap(nums[i], nums[nonZero]);
+                swap(nums[nonZero], nums[i]);
                 nonZero++;
             }
         }
