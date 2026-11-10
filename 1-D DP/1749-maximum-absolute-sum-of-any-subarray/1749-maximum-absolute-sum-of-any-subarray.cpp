@@ -5,13 +5,12 @@ public:
         int curMax = 0, curMin = 0;
 
         for (int x : nums) {
-            curMax = max(x, curMax + x);   // Kadane for max
+            curMax = max(0, curMax + x);
+            curMin = min(0, curMin + x);
             maxSum = max(maxSum, curMax);
-
-            curMin = min(x, curMin + x);   // Kadane for min
             minSum = min(minSum, curMin);
         }
 
-        return max(maxSum, -minSum);
+        return max(maxSum, -minSum); // -minSum == abs(minSum)
     }
 };
